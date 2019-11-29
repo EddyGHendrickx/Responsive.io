@@ -1,0 +1,80 @@
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: red;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .large, .medium {
+    display: none;
+  }
+}
+#first {
+  border: 1px;
+  border-style: solid;
+  border-color: yellow;
+}
+
+#second {
+  border: 1px;
+  border-style: solid;
+  border-color: yellow;
+}
+
+#third {
+  border: 1px;
+  border-style: solid;
+  border-color: yellow;
+}
+
+@media only screen and (min-width: 301px) and (max-width: 767px) {
+  body {
+    display: flex;
+    background-color: green;
+    font-size: 12px;
+  }
+
+  .large, .small {
+    display: none;
+  }
+
+  #first {
+    width: 66%;
+  }
+
+  #second {
+    width: 33%;
+  }
+
+  #third {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+
+  section {
+    background-color: blue;
+    font-size: 30px;
+    display: flex;
+    flex-grow: 1;
+  }
+  section #first, section #second, section #third {
+    width: 33%;
+  }
+
+  .medium, .small {
+    display: none;
+  }
+}
+/*div. sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
